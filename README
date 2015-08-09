@@ -1,0 +1,65 @@
+NAME
+    pod2xml - Script to convert PYX to XML.
+
+SYNOPSIS
+     pyx2xml [-h] [-i] [-x] [--version] [filename] [-]
+
+DESCRIPTION
+     pyx2xml script uses PYX::Write::Tags class to create XML output of PYX.
+
+ARGUMENTS
+    *       "-h"
+
+             Print help.
+
+    *       "-i"
+
+             Indent output.
+
+    *       "-x"
+
+             XML mode.
+
+    *       "--version"
+
+             Print version of script.
+
+    *       "filename"
+
+             Input file in PYX format.
+
+    *       "-"
+
+             Stdin with PYX input.
+
+EXAMPLE1
+     pyx2xml
+
+     # Output:
+     # TODO
+
+EXAMPLE2
+     cat <<END | pyx2xml
+     (element
+     -foo
+     )element
+     END
+
+     # Output:
+     # TODO
+
+REPOSITORY
+    <https://github.com/tupinek/App-PYX2XML>
+
+AUTHOR
+    Michal Špaček <mailto:skim@cpan.org>
+
+    <http://skim.cz>
+
+LICENSE AND COPYRIGHT
+     © 2015 Michal Špaček
+     BSD 2-Clause License
+
+VERSION
+    0.01
+
