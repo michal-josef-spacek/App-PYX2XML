@@ -86,7 +86,7 @@ __END__
 
 =head1 NAME
 
-App::PYX2XML - Perl class for video-generator application.
+App::PYX2XML - Perl class for pyx2xml application.
 
 =head1 SYNOPSIS
 

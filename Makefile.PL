@@ -6,7 +6,7 @@ use warnings;
 use inc::Module::Install;
 
 # Definition.
-abstract 'TODO';
+abstract 'Perl class for pyx2xml application.';
 author 'Michal Spacek <skim@cpan.org>';
 install_script 'bin/pyx2xml';
 license 'bsd';

@@ -1,5 +1,5 @@
 ---
-abstract: TODO
+abstract: 'Perl class for pyx2xml application.'
 author:
   - 'Michal Spacek <skim@cpan.org>'
 build_requires:
