@@ -32,17 +32,22 @@ EXAMPLE1
      pyx2xml
 
      # Output:
-     # TODO
+     # Usage: pyx2xml [-h] [-i] [--version] [filename] [-]
+     #         -h              Print help.
+     #         -i              Indent output.
+     #         --version       Print version.
+     #         [filename]      Process on filename
+     #         [-]             Process on stdin
 
 EXAMPLE2
-     cat <<END | pyx2xml
+     cat <<END | pyx2xml -
      (element
      -foo
      )element
      END
 
      # Output:
-     # TODO
+     # <element>foo</element>
 
 REPOSITORY
     <https://github.com/tupinek/App-PYX2XML>

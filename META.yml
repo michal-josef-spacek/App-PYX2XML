@@ -23,6 +23,7 @@ meta-spec:
 name: App-PYX2XML
 no_index:
   directory:
+    - examples
     - inc
     - t
 requires:
