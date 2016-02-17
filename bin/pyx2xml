@@ -31,7 +31,7 @@ pod2xml - Script to convert PYX to XML.
 
 =head1 SYNOPSIS
 
- pyx2xml [-h] [-i] [-x] [--version] [filename] [-]
+ pyx2xml [-h] [-i] [--version] [filename] [-]
 
 =head1 DESCRIPTION
 
@@ -48,10 +48,6 @@ pod2xml - Script to convert PYX to XML.
 =item * C<-i>
 
  Indent output.
-
-=item * C<-x>
-
- XML mode.
 
 =item * C<--version>
 

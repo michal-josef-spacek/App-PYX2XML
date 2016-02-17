@@ -24,15 +24,13 @@ sub new {
 	$self->{'_opts'} = {
 		'h' => 0,
 		'i' => 0,
-		'x' => 0,
 	};
-	if (! getopts('hix', $self->{'_opts'}) || $self->{'_opts'}->{'h'}
+	if (! getopts('hi', $self->{'_opts'}) || $self->{'_opts'}->{'h'}
 		|| @ARGV < 1) {
 
-		print STDERR "Usage: $0 [-h] [-i] [-x] [--version] [filename] [-]\n";
+		print STDERR "Usage: $0 [-h] [-i] [--version] [filename] [-]\n";
 		print STDERR "\t-h\t\tPrint help.\n";
 		print STDERR "\t-i\t\tIndent output.\n";
-		print STDERR "\t-x\t\tXML mode.\n";
 		print STDERR "\t--version\tPrint version.\n";
 		print STDERR "\t[filename]\tProcess on filename\n";
 		print STDERR "\t[-]\t\tProcess on stdin\n";
@@ -51,7 +49,7 @@ sub run {
 	# Tags object.
 	my $tags;
 	my %params = (
-		$self->{'_opts'}->{'x'} ? ('xml' => 1) : (),
+		'xml' => 1,
 		'output_handler' => \*STDOUT,
 	);
 	if ($self->{'_opts'}->{'i'}) {

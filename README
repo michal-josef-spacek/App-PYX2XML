@@ -2,7 +2,7 @@ NAME
     pod2xml - Script to convert PYX to XML.
 
 SYNOPSIS
-     pyx2xml [-h] [-i] [-x] [--version] [filename] [-]
+     pyx2xml [-h] [-i] [--version] [filename] [-]
 
 DESCRIPTION
      pyx2xml script uses PYX::SGML::Tags class to create XML output of PYX.
@@ -15,10 +15,6 @@ ARGUMENTS
     *       "-i"
 
              Indent output.
-
-    *       "-x"
-
-             XML mode.
 
     *       "--version"
 
