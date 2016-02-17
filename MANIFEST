@@ -17,7 +17,7 @@ MANIFEST			This list of files
 META.yml
 PYX2XML.pm
 README
-t/App-PYX2XML/00-use.t
-t/App-PYX2XML/01-version.t
-t/App-PYX2XML/02-pod_coverage.t
-t/App-PYX2XML/03-pod.t
+t/App-PYX2XML/01-use.t
+t/App-PYX2XML/02-version.t
+xt/App-PYX2XML/01-pod_coverage.t
+xt/App-PYX2XML/02-pod.t
