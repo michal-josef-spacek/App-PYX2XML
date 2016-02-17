@@ -2,6 +2,8 @@ bin/pyx2xml
 Changes
 examples/ex1.pl
 inc/Module/Install.pm
+inc/Module/Install/AuthorRequires.pm
+inc/Module/Install/AuthorTests.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
 inc/Module/Install/Fetch.pm
@@ -17,6 +19,7 @@ MANIFEST			This list of files
 META.yml
 PYX2XML.pm
 README
+SIGNATURE
 t/App-PYX2XML/01-use.t
 t/App-PYX2XML/02-version.t
 xt/App-PYX2XML/01-pod_coverage.t
