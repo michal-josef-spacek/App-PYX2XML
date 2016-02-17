@@ -1,7 +1,9 @@
 TODO
 ====
 2. Proverit ERRORS sekci v doc.
-3.
+3. Do prikladu dat zpracovavani SGML, kde to vyhodi chybu.
+4. Moznost resit <foo /> vs <foo></foo>?
+5.
 
 Applied
 =======
