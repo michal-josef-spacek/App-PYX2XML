@@ -6,7 +6,7 @@ use warnings;
 
 # Modules.
 use Getopt::Std;
-use PYX::Write::Tags;
+use PYX::SGML::Tags;
 use Tags::Output::Indent;
 use Tags::Output::Raw;
 
@@ -60,9 +60,9 @@ sub run {
 		$tags = Tags::Output::Raw->new(%params);
 	}
 
-	# PYX::Write::Tags object.
-	my $writer = PYX::Write::Tags->new(
-		'tags_obj' => $tags,
+	# PYX::SGML::Tags object.
+	my $writer = PYX::SGML::Tags->new(
+		'tags' => $tags,
 	);
 
 	# Parse from stdin.
@@ -73,8 +73,6 @@ sub run {
 	} else {
 		$writer->parse_file($self->{'_filename_or_stdin'});
 	}
-
-	$tags->flush;
 	print "\n";
 
 	return;
@@ -136,7 +134,7 @@ App::PYX2XML - Perl class for video-generator application.
 =head1 DEPENDENCIES
 
 L<Getopt::Std>,
-L<PYX::Write::Tags>,
+L<PYX::SGML::Tags>,
 L<Tags::Output::Indent>,
 L<Tags::Output::Raw>.
 

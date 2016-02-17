@@ -5,7 +5,7 @@ SYNOPSIS
      pyx2xml [-h] [-i] [-x] [--version] [filename] [-]
 
 DESCRIPTION
-     pyx2xml script uses PYX::Write::Tags class to create XML output of PYX.
+     pyx2xml script uses PYX::SGML::Tags class to create XML output of PYX.
 
 ARGUMENTS
     *       "-h"

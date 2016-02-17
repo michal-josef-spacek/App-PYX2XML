@@ -35,7 +35,7 @@ pod2xml - Script to convert PYX to XML.
 
 =head1 DESCRIPTION
 
- pyx2xml script uses PYX::Write::Tags class to create XML output of PYX.
+ pyx2xml script uses PYX::SGML::Tags class to create XML output of PYX.
 
 =head1 ARGUMENTS
 
