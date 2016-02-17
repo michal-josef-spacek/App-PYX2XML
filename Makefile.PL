@@ -19,10 +19,10 @@ license 'bsd';
 name 'App-PYX2XML';
 readme_from 'bin/pyx2xml';
 recursive_author_tests('xt');
-requires 'Class::Utils' => 0.05;
-requires 'Error::Pure' => 0.15;
-requires 'PYX::Parser' => 0.01;
-requires 'PYX::Utils' => 0.01;
+requires 'Getopt::Std' => 0;
+requires 'PYX::SGML::Tags' => 0.01;
+requires 'Tags::Output::Indent' => 0.04;
+requires 'Tags::Output::Raw' => 0.04;
 requires 'perl' => '5.6.2';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=App-PYX2XML';

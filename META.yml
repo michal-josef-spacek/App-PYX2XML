@@ -23,10 +23,10 @@ no_index:
     - t
     - xt
 requires:
-  Class::Utils: 0.05
-  Error::Pure: 0.15
-  PYX::Parser: 0.01
-  PYX::Utils: 0.01
+  Getopt::Std: 0
+  PYX::SGML::Tags: 0.01
+  Tags::Output::Indent: 0.04
+  Tags::Output::Raw: 0.04
   perl: 5.6.2
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=App-PYX2XML
