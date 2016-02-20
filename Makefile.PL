@@ -20,7 +20,7 @@ name 'App-PYX2XML';
 readme_from 'bin/pyx2xml';
 recursive_author_tests('xt');
 requires 'Getopt::Std' => 0;
-requires 'PYX::SGML::Tags' => 0.01;
+requires 'PYX::SGML::Tags' => 0.02;
 requires 'Tags::Output::Indent' => 0.04;
 requires 'Tags::Output::Raw' => 0.04;
 requires 'perl' => '5.6.2';

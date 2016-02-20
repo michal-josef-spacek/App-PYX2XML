@@ -11,7 +11,8 @@ use App::PYX2XML;
 App::PYX2XML->new->run;
 
 # Output:
-# Usage: ./examples/ex1.pl [-h] [-i] [--version] [filename] [-]
+# Usage: ./examples/ex1.pl [-e in_enc] [-h] [-i] [--version] [filename] [-]
+#         -e in_enc       Input encoding (default value is utf-8).
 #         -h              Print help.
 #         -i              Indent output.
 #         --version       Print version.

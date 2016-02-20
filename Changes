@@ -1,4 +1,5 @@
 0.02
+ - Add -e option for input encoding.
 
 0.01 2016-02-17T11:13:38+01:00
  - First version.

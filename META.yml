@@ -24,7 +24,7 @@ no_index:
     - xt
 requires:
   Getopt::Std: 0
-  PYX::SGML::Tags: 0.01
+  PYX::SGML::Tags: 0.02
   Tags::Output::Indent: 0.04
   Tags::Output::Raw: 0.04
   perl: 5.6.2

@@ -22,13 +22,15 @@ sub new {
 
 	# Process arguments.
 	$self->{'_opts'} = {
+		'e' => 'utf-8',
 		'h' => 0,
 		'i' => 0,
 	};
-	if (! getopts('hi', $self->{'_opts'}) || $self->{'_opts'}->{'h'}
+	if (! getopts('ehi', $self->{'_opts'}) || $self->{'_opts'}->{'h'}
 		|| @ARGV < 1) {
 
-		print STDERR "Usage: $0 [-h] [-i] [--version] [filename] [-]\n";
+		print STDERR "Usage: $0 [-e in_enc] [-h] [-i] [--version] [filename] [-]\n";
+		print STDERR "\t-e in_enc\tInput encoding (default value is utf-8)\n";
 		print STDERR "\t-h\t\tPrint help.\n";
 		print STDERR "\t-i\t\tIndent output.\n";
 		print STDERR "\t--version\tPrint version.\n";
@@ -60,6 +62,7 @@ sub run {
 
 	# PYX::SGML::Tags object.
 	my $writer = PYX::SGML::Tags->new(
+		'input_encoding' => $self->{'_opts'}->{'e'},
 		'tags' => $tags,
 	);
 
@@ -127,7 +130,8 @@ App::PYX2XML - Perl class for pyx2xml application.
  App::PYX2XML->new->run;
 
  # Output:
- # Usage: ./examples/ex1.pl [-h] [-i] [--version] [filename] [-]
+ # Usage: ./examples/ex1.pl [-e in_enc] [-h] [-i] [--version] [filename] [-]
+ #         -e in_enc       Input encoding (default value is utf-8).
  #         -h              Print help.
  #         -i              Indent output.
  #         --version       Print version.
