@@ -29,8 +29,10 @@ sub new {
 	if (! getopts('ehi', $self->{'_opts'}) || $self->{'_opts'}->{'h'}
 		|| @ARGV < 1) {
 
-		print STDERR "Usage: $0 [-e in_enc] [-h] [-i] [--version] [filename] [-]\n";
-		print STDERR "\t-e in_enc\tInput encoding (default value is utf-8)\n";
+		print STDERR "Usage: $0 [-e in_enc] [-h] [-i] [--version] ".
+			"[filename] [-]\n";
+		print STDERR "\t-e in_enc\tInput encoding (default value ".
+			"is utf-8)\n";
 		print STDERR "\t-h\t\tPrint help.\n";
 		print STDERR "\t-i\t\tIndent output.\n";
 		print STDERR "\t--version\tPrint version.\n";
