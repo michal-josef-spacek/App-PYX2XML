@@ -8,7 +8,7 @@ use warnings;
 use App::PYX2XML;
 
 # Version.
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 # Run.
 App::PYX2XML->new->run;
@@ -109,6 +109,6 @@ L<http://skim.cz>
 
 =head1 VERSION
 
-0.02
+0.03
 
 =cut
