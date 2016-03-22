@@ -53,8 +53,8 @@ sub run {
 	# Tags object.
 	my $tags;
 	my %params = (
-		'xml' => 1,
 		'output_handler' => \*STDOUT,
+		'xml' => 1,
 	);
 	if ($self->{'_opts'}->{'i'}) {
 		$tags = Tags::Output::Indent->new(%params);
