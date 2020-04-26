@@ -115,12 +115,6 @@ Run.
 
 Returns undef.
 
-=head1 ERRORS
-
- new():
-         From Class::Utils:
-                 Unknown parameter '%s'.
-
 =head1 EXAMPLE
 
  use strict;
