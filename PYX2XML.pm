@@ -1,16 +1,13 @@
 package App::PYX2XML;
 
-# Pragmas.
 use strict;
 use warnings;
 
-# Modules.
 use Getopt::Std;
 use PYX::SGML::Tags;
 use Tags::Output::Indent;
 use Tags::Output::Raw;
 
-# Version.
 our $VERSION = 0.03;
 
 # Constructor.
@@ -122,11 +119,9 @@ App::PYX2XML - Perl class for pyx2xml application.
 
 =head1 EXAMPLE
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use App::PYX2XML;
 
  # Run.
