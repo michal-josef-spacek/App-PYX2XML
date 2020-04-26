@@ -3,7 +3,9 @@ TODO
 2. Proverit ERRORS sekci v doc.
 3. Do prikladu dat zpracovavani SGML, kde to vyhodi chybu.
 4. Moznost resit <foo /> vs <foo></foo>?
-5.
+5. Pridat output encoding. V pripade, ze mam pyx v latin2 a je tam i encoding
+   toho dokumentu v latin2, nemuzu prekodovavat.
+6.
 
 Applied
 =======
