@@ -1,5 +1,6 @@
 0.03
  - Add test for constructor.
+ - Add test for run() method.
  - Fix usage of -e option.
  - Fix to 80 characters on line.
  - Improve LICENSE AND COPYRIGHT section in doc.
