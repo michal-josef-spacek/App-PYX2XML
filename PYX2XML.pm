@@ -96,6 +96,7 @@ App::PYX2XML - Perl class for pyx2xml application.
 =head1 SYNOPSIS
 
  use App::PYX2XML;
+
  my $obj = App::PYX2XML->new;
  $obj->run;
 

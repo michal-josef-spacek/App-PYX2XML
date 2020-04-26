@@ -1,6 +1,7 @@
 0.03
  - Fix to 80 characters on line.
  - Improve LICENSE AND COPYRIGHT section in doc.
+ - Improve SYNOPSIS section in doc.
  - Sort attributes.
  - Update Module::Install to 1.19 version.
  - Update author github username.
