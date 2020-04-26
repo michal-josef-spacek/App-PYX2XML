@@ -1,6 +1,7 @@
 0.03
  - Fix to 80 characters on line.
  - Sort attributes.
+ - Update Module::Install to 1.19 version.
 
 0.02 2016-02-20T23:43:25+01:00
  - Add -e option for input encoding.
