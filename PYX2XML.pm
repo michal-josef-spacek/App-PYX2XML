@@ -31,7 +31,7 @@ sub run {
 		'h' => 0,
 		'i' => 0,
 	};
-	if (! getopts('ehi', $self->{'_opts'}) || $self->{'_opts'}->{'h'}
+	if (! getopts('e:hi', $self->{'_opts'}) || $self->{'_opts'}->{'h'}
 		|| @ARGV < 1) {
 
 		print STDERR "Usage: $0 [-e in_enc] [-h] [-i] [--version] ".
