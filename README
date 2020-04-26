@@ -56,7 +56,7 @@ EXAMPLE2
      # <element>foo</element>
 
 REPOSITORY
-    <https://github.com/tupinek/App-PYX2XML>
+    <https://github.com/michal-josef-spacek/App-PYX2XML>
 
 AUTHOR
     Michal Špaček <mailto:skim@cpan.org>

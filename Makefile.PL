@@ -26,8 +26,8 @@ requires 'Tags::Output::Raw' => 0.04;
 requires 'perl' => '5.6.2';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=App-PYX2XML';
-resources 'homepage' => 'https://github.com/tupinek/App-PYX2XML';
-resources 'repository' => 'git://github.com/tupinek/App-PYX2XML';
+resources 'homepage' => 'https://github.com/michal-josef-spacek/App-PYX2XML';
+resources 'repository' => 'git://github.com/michal-josef-spacek/App-PYX2XML';
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
 tests_recursive;

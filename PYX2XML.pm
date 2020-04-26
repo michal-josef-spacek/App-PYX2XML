@@ -149,7 +149,7 @@ L<Tags::Output::Raw>.
 
 =head1 REPOSITORY
 
-L<https://github.com/tupinek/App-PYX2XML>.
+L<https://github.com/michal-josef-spacek/App-PYX2XML>.
 
 =head1 AUTHOR
 
