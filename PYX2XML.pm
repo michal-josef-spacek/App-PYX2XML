@@ -17,6 +17,14 @@ sub new {
 	# Create object.
 	my $self = bless {}, $class;
 
+	# Object.
+	return $self;
+}
+
+# Run script.
+sub run {
+	my $self = shift;
+
 	# Process arguments.
 	$self->{'_opts'} = {
 		'e' => 'utf-8',
@@ -35,17 +43,9 @@ sub new {
 		print STDERR "\t--version\tPrint version.\n";
 		print STDERR "\t[filename]\tProcess on filename\n";
 		print STDERR "\t[-]\t\tProcess on stdin\n";
-		exit 1;
+		return 1;
 	}
 	$self->{'_filename_or_stdin'} = $ARGV[0];
-
-	# Object.
-	return $self;
-}
-
-# Run script.
-sub run {
-	my $self = shift;
 
 	# Tags object.
 	my $tags;
