@@ -99,17 +99,21 @@ App::PYX2XML - Perl class for pyx2xml application.
 
 =head1 METHODS
 
-=over 8
+=head2 C<new>
 
-=item C<new()>
+ my $obj = App::PYX2XML->new;
 
- Constructor.
+Constructor.
 
-=item C<run()>
+Returns instance of object.
 
- Run.
+=head2 C<run>
 
-=back
+ $obj->run;
+
+Run.
+
+Returns undef.
 
 =head1 ERRORS
 

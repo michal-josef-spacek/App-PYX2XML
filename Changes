@@ -1,5 +1,6 @@
 0.04
  - Fix test dependencies.
+ - Rewrite doc METHODS section to =head2.
 
 0.03 2020-04-26T19:51:53+02:00
  - Add test for constructor.
