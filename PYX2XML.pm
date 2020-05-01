@@ -123,7 +123,7 @@ Returns undef.
  use App::PYX2XML;
 
  # Run.
- App::PYX2XML->new->run;
+ exit App::PYX2XML->new->run;
 
  # Output:
  # Usage: ./examples/ex1.pl [-e in_enc] [-h] [-i] [--version] [filename] [-]

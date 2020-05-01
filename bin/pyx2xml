@@ -8,7 +8,7 @@ use App::PYX2XML;
 our $VERSION = 0.05;
 
 # Run.
-App::PYX2XML->new->run;
+exit App::PYX2XML->new->run;
 
 # Print version.
 sub VERSION_MESSAGE {
