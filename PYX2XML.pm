@@ -30,16 +30,19 @@ sub run {
 		'e' => 'utf-8',
 		'h' => 0,
 		'i' => 0,
+		's' => '',
 	};
-	if (! getopts('e:hi', $self->{'_opts'}) || $self->{'_opts'}->{'h'}
+	if (! getopts('e:his:', $self->{'_opts'}) || $self->{'_opts'}->{'h'}
 		|| @ARGV < 1) {
 
-		print STDERR "Usage: $0 [-e in_enc] [-h] [-i] [--version] ".
+		print STDERR "Usage: $0 [-e in_enc] [-h] [-i] [-s no_simple] [--version] ".
 			"[filename] [-]\n";
 		print STDERR "\t-e in_enc\tInput encoding (default value ".
 			"is utf-8)\n";
 		print STDERR "\t-h\t\tPrint help.\n";
 		print STDERR "\t-i\t\tIndent output.\n";
+		print STDERR "\t-s no_simple\tList of element, which cannot be a simple".
+			" like <element/>. Separator is comma.\n";
 		print STDERR "\t--version\tPrint version.\n";
 		print STDERR "\t[filename]\tProcess on filename\n";
 		print STDERR "\t[-]\t\tProcess on stdin\n";
@@ -47,9 +50,13 @@ sub run {
 	}
 	$self->{'_filename_or_stdin'} = $ARGV[0];
 
+	# No simple elements.
+	my @no_simple = split m/,/ms, $self->{'_opts'}->{'s'};
+
 	# Tags object.
 	my $tags;
 	my %params = (
+		'no_simple' => \@no_simple,
 		'output_handler' => \*STDOUT,
 		'xml' => 1,
 	);
@@ -126,10 +133,11 @@ Returns undef.
  exit App::PYX2XML->new->run;
 
  # Output:
- # Usage: ./examples/ex1.pl [-e in_enc] [-h] [-i] [--version] [filename] [-]
+ # Usage: ./examples/ex1.pl [-e in_enc] [-h] [-i] [-s no_simple] [--version] [filename] [-]
  #         -e in_enc       Input encoding (default value is utf-8).
  #         -h              Print help.
  #         -i              Indent output.
+ #         -s no_simple    List of element, which cannot be a simple like <element/>. Separator is comma.
  #         --version       Print version.
  #         [filename]      Process on filename
  #         [-]             Process on stdin

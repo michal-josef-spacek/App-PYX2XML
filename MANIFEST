@@ -25,6 +25,7 @@ t/App-PYX2XML/02-version.t
 t/App-PYX2XML/03-new.t
 t/App-PYX2XML/04-run.t
 t/data/element.pyx
+t/data/element2.pyx
 t/data/element_latin2.pyx
 t/data/element_sgml.pyx
 t/data/element_sgml2.pyx

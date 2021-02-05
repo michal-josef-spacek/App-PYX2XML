@@ -1,4 +1,5 @@
 0.05
+ - Add -s option to script.
  - Add tests for SGML and not ended element.
  - Fix bugtracker.
  - Fix exit code.
