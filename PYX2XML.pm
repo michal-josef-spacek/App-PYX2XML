@@ -75,7 +75,7 @@ sub run {
 	}
 	print "\n";
 
-	return;
+	return 0;
 }
 
 1;

@@ -1,6 +1,7 @@
 0.05
  - Add tests for SGML and not ended element.
  - Fix bugtracker.
+ - Fix exit code.
  - Update copyright years.
 
 0.04 2020-04-26T22:52:34+02:00
