@@ -5,7 +5,7 @@ use App::PYX2XML;
 use English qw(-no_match_vars);
 use Error::Pure::Utils qw(clean);
 use File::Object;
-use Test::More 'tests' => 7;
+use Test::More 'tests' => 9;
 use Test::NoWarnings;
 use Test::Output;
 use Unicode::UTF8 qw(decode_utf8);
@@ -118,3 +118,30 @@ stderr_is(
 	$right_ret,
 	'Run help.',
 );
+
+# Test.
+@ARGV = (
+	$data_dir->file('element_sgml.pyx')->s,
+);
+$right_ret = <<'END';
+
+END
+stdout_is(
+	sub {
+		App::PYX2XML->new->run;
+		return;
+	},
+	$right_ret,
+	'Run with not ended element.',
+);
+
+# Test.
+@ARGV = (
+	$data_dir->file('element_sgml2.pyx')->s,
+);
+eval {
+	App::PYX2XML->new->run;
+};
+is($EVAL_ERROR, "Ending bad tag: 'element' in block of tag 'sub-element'.\n",
+	"SGML PYX document, error.");
+clean();
