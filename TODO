@@ -1,6 +1,5 @@
 TODO
 ====
-2. Proverit ERRORS sekci v doc.
 5. Pridat output encoding. V pripade, ze mam pyx v latin2 a je tam i encoding
    toho dokumentu v latin2, nemuzu prekodovavat.
 6. Pridat -d option jako u pyx2sgml
@@ -16,3 +15,7 @@ OK [20210205] skim
 
 4. Moznost resit <foo /> vs <foo></foo>?
 OK [20210205] skim
+
+2. Proverit ERRORS sekci v doc.
+Nevim co tady resit.
+NONE [20210205] skim
